@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/index.css">
+    <title>Alarm Clock</title>
+  </head>
+  <body class="">
+    <div class="container min-h-screen flex flex-col items-center justify-center bg-amber-300">
+      <div class="flex flex-col items-center justify-center w-[450px] bg-white p-8 rounded-3xl">
+        <img class="size-20" src="./public/images/clock.png" alt="Clock">
+      <h1 id="time" class="text-4xl my-8">23:40:50</h1>
+      <div id="content" class=" w-full flex items-center justify-between">
+        <div id="controls" class="border-1 w-2/5 rounded-md py-1.5 px-4 ">
+          <select id="selectHour" class="w-full text-lg">
+            <option value="Hour" selected hidden>Hour</option>
+          </select>
+        </div>
+        <div id="controls" class="border-1 w-2/5 rounded-md py-1.5 px-4 ">
+          <select id="selectMinute" class="w-full text-lg">
+            <option value="Minute" selected hidden>Minute</option>
+          </select>
+        </div>
+      </div>
+      <button id="setAlarmBtn" class="w-full bg-amber-300 text-white py-3.5 mt-10 rounded-lg text-xl cursor-pointer">Set alarm</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
